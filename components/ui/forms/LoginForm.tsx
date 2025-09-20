@@ -67,8 +67,8 @@ const LoginForm = () => {
         <Form className="form-style" onSubmit={handleSubmit(handleLogin)}>
           <InputField>
             <Input
-              label="Username"
-              placeholder="John"
+              label="UserName"
+              placeholder="Enter your username"
               varient="primary"
               type="text"
               name="username"
