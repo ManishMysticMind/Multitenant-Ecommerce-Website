@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
-import axiosWrapper, { baseUrl } from "../axiosWrapper";
+import axiosWrapper from "../axiosWrapper";
+import { baseUrl } from "../axiosWrapper";
 
 const getCategoryDetail = async (slug: string) => {
   const url = baseUrl + `/api/category/${slug}/`;
