@@ -1,0 +1,136 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: start;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.heroSlider {
+    width: 100%;
+    overflow: hidden;
+}
+.heroSlider .swiper-slide {
+    color: #fff;
+}
+
+.heroSlider .swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 30px;
+    height: 8px;
+    border-radius: 5px;
+}
+
+/* .heroSlider .swiper-pagination-bullets .swiper-pagination-bullet-active {
+    background: #fed700;
+} */
+
+.heroSlider .swiper-pagination {
+    text-align: end;
+    padding-right: 2rem;
+}
+
+.text-limit-one-line {
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+}
+.text-limit-two-line {
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+}
+.text-limit-one-line,
+.text-limit-two-line {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.swiper-zoom-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.swiper-zoom-container img {
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.swiper-zoom-container:hover img {
+    transform: scale(1.5); /* Scale up the image on hover */
+    cursor: zoom-in;
+}
+
+.radio-label {
+    cursor: pointer;
+}
+
+.radio-label input:checked + div {
+    border: 2px solid #007bff; /* Change to your active border color */
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: auto !important;
+    right: 0;
+}
+
+.dropdown-menu.show {
+    min-width: 255px;
+}
+
+.privacy-policy-content,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 1rem;
+}
+
+.remove-input-arrow::-webkit-outer-spin-button,
+.remove-input-arrow::-webkit-inner-spin-button {
+    /* Chrome, Safari, Edge, Opera */
+    -webkit-appearance: none;
+    margin: 0;
+    opacity: 0;
+}
+
+.remove-input-arrow[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
